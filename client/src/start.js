@@ -6,12 +6,26 @@ ReactDOM.render(<FortuneTeller />, document.querySelector("main"));
 function FortuneTeller() {
     const [ask, setAsk] = useState(false);
     const [stage, setStage] = useState(1);
+    const [oracle, setOracle] = useState();
 
     useEffect(() => {
         setTimeout(() => {
             setAsk(true);
         }, 8000);
     }, []);
+
+    const clickOracle = () => {
+        setStage(3);
+        fetch(`/api/oracle`)
+            .then((data) => data.json())
+            .then((data) => {
+                console.log("data in fetch oracle", data);
+                setOracle(data);
+            })
+            .catch((err) => {
+                console.log("error fetching oracle from server:", err);
+            });
+    };
 
     const showStage = () => {
         if (stage === 1) {
@@ -36,12 +50,30 @@ function FortuneTeller() {
         } else if (stage === 2) {
             return (
                 <div className="stage2-container">
-                    <button className="choice">Oracle Wisdom</button>
+                    <button onClick={clickOracle} className="choice">
+                        Oracle Wisdom
+                    </button>
                     <button className="choice">Ask a question</button>
                 </div>
             );
-        } else if (this.state.stage === 3) {
-            return <></>;
+        } else if (stage === 3) {
+            return (
+                <>
+                    <p>{oracle}</p>
+                </>
+            );
+        } else if (stage === 4) {
+            return (
+               
+                    qna.load()
+                    .then((model) => {                    
+                        model.findAnswers(question, passage).then(answers => {
+                        console.log('Answers: ', answers);
+                    });
+                });
+    
+                
+            )
         }
     };
 
