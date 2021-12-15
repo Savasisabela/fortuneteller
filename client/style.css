@@ -20,6 +20,11 @@ body {
     overflow: hidden;
 }
 
+textarea {
+    text-transform: none;
+    color: #090913;
+}
+
 .breathe,
 button {
     z-index: 1000;

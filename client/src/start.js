@@ -1,11 +1,12 @@
 import ReactDOM from "react-dom";
 import { useState, useEffect } from "react";
+import Question from "./question";
 
 ReactDOM.render(<FortuneTeller />, document.querySelector("main"));
 
 function FortuneTeller() {
     const [ask, setAsk] = useState(false);
-    const [stage, setStage] = useState(1);
+    const [stage, setStage] = useState(2);
     const [oracle, setOracle] = useState();
 
     useEffect(() => {
@@ -53,7 +54,9 @@ function FortuneTeller() {
                     <button onClick={clickOracle} className="choice">
                         Oracle Wisdom
                     </button>
-                    <button className="choice">Ask a question</button>
+                    <button onClick={() => setStage(4)} className="choice">
+                        Ask a question
+                    </button>
                 </div>
             );
         } else if (stage === 3) {
@@ -63,17 +66,7 @@ function FortuneTeller() {
                 </>
             );
         } else if (stage === 4) {
-            return (
-               
-                    qna.load()
-                    .then((model) => {                    
-                        model.findAnswers(question, passage).then(answers => {
-                        console.log('Answers: ', answers);
-                    });
-                });
-    
-                
-            )
+            return <Question />;
         }
     };
 
