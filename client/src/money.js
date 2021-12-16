@@ -39,6 +39,114 @@ If you rent, get renters insurance to protect the contents of your place from ev
 Disability insurance protects your greatest asset—the ability to earn an income—by providing you with a steady income if you ever become unable to work for an extended period of time due to illness or injury.
 If you want help managing your money, find a fee-only financial planner to provide unbiased advice that's in your best interest, rather than a commission-based financial advisor, who earns money when you sign up with the investments that their company backs. The latter has a potentially divided loyalty (to their company's bottom line, and to you), while the former has no incentive to guide you down a wrong path.
 You'll also want to protect your money from taxes—which is easy to do with a retirement account—and from inflation, which you can do by making sure that all of your money is earning interest. There are a variety of vehicles in which you can invest your savings, such as high-interest savings accounts, money market funds, CDs, stocks, bonds, and mutual funds. The first three are relatively free of risk, while the remaining three carry greater possibilities for financial setbacks but also greater possibilities for monetary rewards. Learning about investing is an important skill for building up your savings—and, eventually, building wealth.
+
+Cryptocurrency is a digital currency in which transactions are verified and records maintained by a decentralized system using cryptography, rather than by a centralized authority.
+
+A blockchain is an open, distributed ledger that records transactions in code. In practice, it’s a little like a checkbook that's distributed across countless computers around the world. Transactions are recorded in “blocks” that are then linked together on a “chain” of previous cryptocurrency transactions.
+
+“Imagine a book where you write down everything you spend money on each day,” says Buchi Okoro, CEO and co-founder of African cryptocurrency exchange Quidax. “Each page is similar to a block, and the entire book, a group of pages, is a blockchain.”
+
+With a blockchain, everyone who uses a cryptocurrency has their own copy of this book to create a unified transaction record. Software logs each new transaction as it happens, and every copy of the blockchain is updated simultaneously with the new information, keeping all records identical and accurate.
+
+To prevent fraud, each transaction is checked using one of two main validation techniques: proof of work or proof of stake.
+
+Learning how to invest money might seem scary, but it's easier than you think, and you can start no matter how much you have saved.
+
+Investing money in the stock market is the No. 1 Americans build wealth and save for long-term goals such as retirement, but figuring out the best way to invest that money can feel daunting. This doesn't have to be the case.
+
+The best way to invest money: A step-by-step guide
+Everyone has a unique financial situation. The best way to invest depends on your personal preferences along with your current and future financial circumstances. It's important to have a detailed understanding of your income and expenses, assets and liabilities, responsibilities and goals when building a sound investing plan.
+
+Here's a five-step process that can help you figure out how to invest your money right now:
+
+Identify your financial goals, timeframe and feelings about risk.
+
+Decide whether you want to take a "do-it-yourself" or "manage it for me" approach.
+
+Pick the type of investment account you'll use (401(k), IRA, taxable brokerage account, education investment account).
+
+Open an account.
+
+Choose what investments match your risk tolerance (stocks, bonds, mutual funds, real estate).
+
+And here are the details on how to put your cash to work in the right way, right away.
+
+1. Give your money a goal
+Figuring out how to invest money starts with determining your investing goals, when you need or want to achieve them and your comfort level with risk for each goal.
+
+Long-term goals: The universal goal is often retirement, but you may have others as well: Do you want a down payment on a house or college tuition? To purchase your dream vacation home or go on an anniversary trip in 10 years?
+
+Short-term goals: This is next year's vacation, a house you want to buy next year, an emergency fund or your Christmas piggy bank.
+
+In this post, we're largely focusing on long-term goals. We'll also touch on how to invest with no specific goal in mind. After all, the aim to grow your money is a fine goal by itself.
+
+Money for short-term goals generally shouldn't be invested at all. If you need the money you're saving in under five years, check out our recommendations for how to invest money for short-term goals.
+
+2. Decide how much help you want
+Once you know your goals, you can dive into the specifics about how to invest (from picking the type of account to the best place to open an account to choosing investment vehicles). But if the DIY route doesn't sound like it'll be your cup of tea, no worries.
+
+Many savers prefer having someone invest their money for them. And while that used to be a pricey proposition, nowadays it's quite affordable — cheap, even! — to hire professional help thanks to the advent of automated portfolio management services a.k.a. robo-advisors.
+
+These online advisors use computer algorithms and advanced software to build and manage a client’s investment portfolio, offering everything from automatic rebalancing to tax optimization and even access to human help when you need it.
+
+If you'd rather do it yourself, let's continue.
+
+3. Pick an investment account
+To buy most types of stocks and bonds, you'll need an investment account. Just as there are a number of bank accounts for different purposes — checking, savings, money market, certificates of deposit — there are a handful of investment accounts to know about.
+
+Some accounts offer tax advantages if you're investing for a specific purpose, like retirement. Keep in mind that you may be taxed or penalized if you pull your money out early, or for a reason not considered qualified by the plan rules. Other accounts are general purpose and should be used for goals not related to retirement — that dream vacation home, the boat to go with it or a home renovation down the line.
+
+Here's a list of some of the most popular investing accounts:
+
+If you're investing for retirement:
+401(k): You might already have a 401(k), which is offered by many employers and takes contributions right from your paycheck. Many companies will match your contributions, up to a limit — if yours does, you should contribute at least enough to earn that match before investing elsewhere.
+
+Traditional or Roth IRA: If you're already contributing to a 401(k) or don't have one, you can open an individual retirement account. In a traditional IRA, your contributions are tax-deductible but distributions in retirement are taxed as ordinary income. A Roth IRA is a cousin of the traditional version, with the opposite tax treatment: Contributions are made after-tax, but money grows tax-free and distributions in retirement are not taxed. There are also retirement accounts specifically designed for self-employed people.
+
+» View our roundup of the best IRA providers
+
+If you're investing for another goal:
+
+Taxable account. Sometimes called nonretirement or nonqualified accounts, these are flexible investment accounts not earmarked for any specific purpose. Unlike retirement accounts, there are no rules on contribution amounts, and you can take money out at any time. These accounts don't have specific tax advantages. If you're saving for retirement and you've maxed out the above options, you can continue saving in a taxable account.
+
+College savings accounts. Like retirement accounts, these offer tax perks for saving for college. A 529 account and a Coverdell education savings account are commonly used for college savings.
+
+With the exception of a 401(k) — which is offered through your employer — you can open these accounts at an online broker.
+
+» View our roundup of the best online brokers
+
+4. Open your account
+Now that you know what kind of account you want, you need to choose an account provider. There are two major options:
+
+An online broker will allow you to self-manage your account, buying and selling a variety of investments, including stocks, bonds, funds and more complex instruments. An account at an online broker is a good choice for investors who want a large selection of investment options or who prefer to be hands-on with account management. Here's how to open a brokerage account.
+
+A robo-advisor in a portfolio management company that uses computers to do much of the work for you, building and managing a portfolio based on your risk tolerance and goal. You'll pay an annual management fee for the service, generally around 0.25% to 0.50%. Robo-advisors often use funds, so they're generally not a good choice if you're interested in individual stocks or bonds. But they can be ideal for investors who prefer to be hands off.
+
+Don't worry if you're just getting started. Often you can open an account with no initial deposit. (See our lineup of best brokers for beginning investors.) Of course, you're not investing until you actually add money to the account, something you'll want to do regularly for the best results. You can set up automatic transfers from your checking account to your investment account, or even directly from your paycheck if your employer allows that.
+
+» Curious about buying stocks? Learn how to invest in the stock market.
+
+5. Choose investments that match your tolerance for risk
+Figuring out how to invest money involves asking where you should invest money (see our full list of the best investments for any age or income). The answer will depend on your goals and willingness to take on more risk in exchange for higher potential investment rewards. Common investments include:
+
+Stocks: Individual shares (piece of ownership) of companies you believe will increase in value.
+
+Bonds: Bonds allow a company or government to borrow your money to fund a project or refinance other debt. Bonds are considered fixed-income investments and typically make regular interest payments to investors. The principal is then returned on a set maturity date. (Here's more on how bonds work.)
+
+Mutual funds: Investing your money in funds — like mutual funds, index funds or exchange-traded funds (ETFs)— allows you to purchase many stocks, bonds or other investments all at once. Mutual funds build instant diversification by pooling investor money and using it to buy a basket of investments that align with the fund's stated goal. Funds may be actively managed, with a professional manager selecting the investments used, or they may track an index. A Standard & Poor's 500 index fund, for example, will hold 500 of the largest companies in the United States.
+
+Real estate: Real estate is a way to diversify your investment portfolio outside of the traditional mix of stocks and bonds. It doesn't necessarily mean buying a home or becoming a landlord — you can invest in REITs, which are like mutual funds for real estate, or through online real estate investing platforms, which pool investor money.
+
+For growth, invest in stocks and stock funds
+If you have a high risk tolerance and can stomach volatility, you'll want a portfolio that contains mostly stocks or stock funds. If you have a low risk tolerance, you'll want a portfolio that has more bonds, since these tend to be more stable and less volatile. Your goals are important in shaping your portfolio, too. For long-term goals, your portfolio can be more aggressive and take more risks — potentially leading to higher returns — so you'll probably want to own more stocks than bonds.
+
+Whichever route you choose, the best way to reach your long-term financial goals and minimize risk is to spread your money across a range of asset types. That's called asset allocation. Then within each asset class, you'll also want to diversify into multiple investments.
+
+Asset allocation is important because different asset classes — stocks, bonds, ETFs, mutual funds, real estate — respond to the market differently. When one is up, another can be down. So deciding on the right mix will help your portfolio weather changing markets on the journey toward achieving your goals.
+
+Diversification means owning a range of assets across a variety of industries, company sizes and geographic areas. It's like a subset of asset allocation.
+
+Building a diversified portfolio of individual stocks and bonds takes time and expertise, so most investors benefit from fund investing. Index funds and ETFs are typically low-cost and easy to manage, as it may take only four or five funds to build adequate diversification.
 `;
 
 export default money;

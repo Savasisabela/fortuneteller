@@ -14,7 +14,7 @@ app.get(`/api/oracle`, (req, res) => {
     exec(
         `yarn gen quotes ./my-quotes-model/model.json \
     --genLength 40 \
-    --temperature 0.5`,
+    --temperature 0.55`,
         { cwd: "text-generator" },
         (error, stdout, stderr) => {
             if (error) {
@@ -26,10 +26,10 @@ app.get(`/api/oracle`, (req, res) => {
 
             let result = stdout;
             result = result.substring(214, 254);
+            let answer = result.split(" ").slice(1, -1).join(" ");
+            console.log(answer);
 
-            console.log(result);
-
-            res.json(result);
+            res.json(answer);
         }
     );
 });
