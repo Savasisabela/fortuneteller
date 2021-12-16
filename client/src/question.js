@@ -18,6 +18,7 @@ export default function Question() {
 
     const handleChange = (e) => setQuestion(e.target.value);
     const sendQuestion = () => {
+        setFail(false);
         console.log("question sent:", question);
         model
             .findAnswers(question, passage)
@@ -56,23 +57,38 @@ export default function Question() {
     return (
         <>
             {model && (
-                <div>
-                    <p>What do you want to know about?</p>
-                    <button onClick={moneyClick}>Money</button>
-                    <button onClick={loveClick}>Love</button>
-                    <button onClick={healthClick}>Health</button>
-                    <div>
-                        {passage === money && "ASK A QUESTION ABOUT MONEY"}
-                        {passage === love && "ASK A QUESTION ABOUT LOVE"}
-                        {passage === health && "ASK A QUESTION ABOUT HEALTH"}
+                <div className="question-container">
+                    <p className="prompt">What do you want to know about?</p>
+                    <div className="question-btns">
+                        <button onClick={moneyClick}>Money</button>
+                        <button onClick={loveClick}>Love</button>
+                        <button onClick={healthClick}>Health</button>
                     </div>
-                    <textarea onChange={(e) => handleChange(e)} type="text" />
-                    <button onClick={sendQuestion}>Ask</button>
+                    {passage && (
+                        <div className="question-input-container">
+                            <div className="ask-a-question">
+                                {passage === money &&
+                                    "ASK A QUESTION ABOUT MONEY"}
+                                {passage === love &&
+                                    "ASK A QUESTION ABOUT LOVE"}
+                                {passage === health &&
+                                    "ASK A QUESTION ABOUT HEALTH"}
+                            </div>
+                            <textarea
+                                className="textarea"
+                                onChange={(e) => handleChange(e)}
+                                type="text"
+                            />
+                            <button className="ask-btn" onClick={sendQuestion}>
+                                Ask
+                            </button>
 
-                    <div>
-                        {fail && "please try another question"}
-                        {reply}
-                    </div>
+                            <div>
+                                {fail && "please try another question"}
+                                {reply}
+                            </div>
+                        </div>
+                    )}
                 </div>
             )}
         </>

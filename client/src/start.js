@@ -6,7 +6,7 @@ ReactDOM.render(<FortuneTeller />, document.querySelector("main"));
 
 function FortuneTeller() {
     const [ask, setAsk] = useState(false);
-    const [stage, setStage] = useState(2);
+    const [stage, setStage] = useState(4);
     const [oracle, setOracle] = useState();
     const slowVideo = useRef();
 
@@ -15,10 +15,6 @@ function FortuneTeller() {
             setAsk(true);
         }, 8000);
     }, []);
-
-    // useEffect(() => {
-    //     slowVideo.current.playbackRate = 0.5;
-    // }, []);
 
     const clickOracle = () => {
         setStage(3);
@@ -71,7 +67,7 @@ function FortuneTeller() {
         } else if (stage === 3) {
             return (
                 <div className="oracle-container">
-                    <p className="oracle">{oracle}</p>
+                    {oracle && <p className="oracle">{oracle}</p>}
                     <video
                         src="smoke.mp4"
                         autoPlay
