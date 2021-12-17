@@ -5,14 +5,15 @@ import Question from "./question";
 ReactDOM.render(<FortuneTeller />, document.querySelector("main"));
 
 function FortuneTeller() {
-    const [ask, setAsk] = useState(false);
-    const [stage, setStage] = useState(4);
+    const [start, setStart] = useState(false);
+    const [stage, setStage] = useState(2);
     const [oracle, setOracle] = useState();
-    const slowVideo = useRef();
+    const [askButton, setAskButton] = useState(false);
+    const smokeVideo = useRef();
 
     useEffect(() => {
         setTimeout(() => {
-            setAsk(true);
+            setStart(true);
         }, 8000);
     }, []);
 
@@ -24,13 +25,25 @@ function FortuneTeller() {
                 console.log("data in fetch oracle", data);
                 setOracle(data);
             })
+            .then(() => {
+                setTimeout(() => {
+                    setAskButton(true);
+                }, 5000);
+            })
             .catch((err) => {
                 console.log("error fetching oracle from server:", err);
             });
     };
 
     const setPlayBack = () => {
-        slowVideo.current.playbackRate = 0.8;
+        smokeVideo.current.playbackRate = 0.8;
+    };
+
+    const reloadOracle = () => {
+        setAskButton(false);
+        setOracle();
+        smokeVideo.current.play();
+        clickOracle();
     };
 
     const showStage = () => {
@@ -46,7 +59,7 @@ function FortuneTeller() {
                         <p className="breathe">TAKE A DEEP BREATH</p>
                     </div>
 
-                    {ask && (
+                    {start && (
                         <button className="start" onClick={() => setStage(2)}>
                             START
                         </button>
@@ -56,6 +69,14 @@ function FortuneTeller() {
         } else if (stage === 2) {
             return (
                 <div className="stage2-container">
+                    <video
+                        src="smoke2.mp4"
+                        autoPlay
+                        muted
+                        loop
+                        onCanPlay={() => setPlayBack()}
+                        ref={smokeVideo}
+                    ></video>
                     <button onClick={clickOracle} className="choice">
                         Oracle Wisdom
                     </button>
@@ -73,8 +94,18 @@ function FortuneTeller() {
                         autoPlay
                         muted
                         onCanPlay={() => setPlayBack()}
-                        ref={slowVideo}
+                        ref={smokeVideo}
                     ></video>
+                    {askButton && (
+                        <div className="oracle-btn">
+                            <button onClick={reloadOracle} className="choice">
+                                Try again
+                            </button>
+                            <button onClick={() => setStage(4)}>
+                                Ask a question
+                            </button>
+                        </div>
+                    )}
                 </div>
             );
         } else if (stage === 4) {

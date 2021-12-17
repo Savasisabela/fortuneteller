@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import money from "./money";
 import love from "./love";
 import health from "./health";
@@ -10,15 +10,22 @@ export default function Question() {
     const [fail, setFail] = useState(false);
     const [reply, setReply] = useState();
 
+    const smokeVideo = useRef();
+
     useEffect(() => {
         qna.load().then((model) => {
             setModel(model);
         });
     }, []);
 
+    const setPlayBack = () => {
+        smokeVideo.current.playbackRate = 0.8;
+    };
+
     const handleChange = (e) => setQuestion(e.target.value);
     const sendQuestion = () => {
         setFail(false);
+        setReply("");
         console.log("question sent:", question);
         model
             .findAnswers(question, passage)
@@ -27,8 +34,8 @@ export default function Question() {
                 if (!answers.length) {
                     return setFail(true);
                 }
-
-                setReply(answers[0].text);
+                let i = Math.floor(Math.random() * answers.length);
+                setReply(answers[i].text);
             })
             .catch((err) => console.log("err on getting answer", err));
     };
@@ -55,7 +62,17 @@ export default function Question() {
     };
 
     return (
-        <>
+        <div className="stage4-container">
+            <video
+                className="question-smoke"
+                src="smoke3.mp4"
+                autoPlay
+                muted
+                loop
+                onCanPlay={() => setPlayBack()}
+                ref={smokeVideo}
+            ></video>
+            {/* <img className="loading" src="smoke.gif"></img> */}
             {model && (
                 <div className="question-container">
                     <p className="prompt">What do you want to know about?</p>
@@ -84,13 +101,23 @@ export default function Question() {
                             </button>
 
                             <div>
-                                {fail && "please try another question"}
-                                {reply}
+                                {/* {!reply && !fail && (
+                                    <img
+                                        className="loading"
+                                        src="smoke.gif"
+                                    ></img>
+                                )} */}
+                                {fail && (
+                                    <p className="answer">
+                                        please try another question
+                                    </p>
+                                )}
+                                {reply && <p className="answer">{reply}</p>}
                             </div>
                         </div>
                     )}
                 </div>
             )}
-        </>
+        </div>
     );
 }
